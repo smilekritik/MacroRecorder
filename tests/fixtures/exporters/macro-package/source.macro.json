@@ -1,0 +1,30 @@
+{
+  "SchemaVersion": 12,
+  "Id": "55555555-5555-5555-5555-555555555555",
+  "Name": "Native Export Gold",
+  "Folder": "",
+  "Description": "Macro exported as pure Native JSON",
+  "IsEnabled": true,
+  "Tags": [
+    "export"
+  ],
+  "ModifiedAt": "2026-09-11T00:00:00+00:00",
+  "Recording": {
+    "Keyboard": true,
+    "MouseButtons": true
+  },
+  "Playback": {
+    "ActivationMode": "Once",
+    "InfoCardOverride": "ForceShow"
+  },
+  "Hotkey": {
+    "VirtualKey": 65
+  },
+  "Events": [
+    {
+      "TimeMicroseconds": 0,
+      "Type": "KeyDown",
+      "VirtualKey": 65
+    }
+  ]
+}

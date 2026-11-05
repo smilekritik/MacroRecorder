@@ -1,0 +1,6 @@
+DELAY : 30
+Keyboard : 65 : KeyPress
+Mouse : 100 : 200 : LeftClick : 0 : 0
+TYPE TEXT : hello : world
+COMMENT : note
+GOTO : loop

@@ -1,0 +1,4 @@
+[
+  "Labels and jumps are not supported (loops were intentionally left out); the line “GOTO : loop” was kept as a comment.",
+  "The .mrf format has no compatible global shortcut. The macro was imported disabled; assign a shortcut and review the timeline."
+]

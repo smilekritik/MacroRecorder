@@ -1,0 +1,46 @@
+{
+  "SchemaVersion": 12,
+  "Id": "11111111-1111-1111-1111-111111111109",
+  "Name": "Case Insensitive Schema Macro",
+  "Folder": "",
+  "Description": "",
+  "IsEnabled": true,
+  "Tags": [],
+  "ModifiedAt": "2026-09-11T00:00:00+00:00",
+  "Recording": {
+    "Keyboard": true,
+    "MouseButtons": true,
+    "MouseMovement": true,
+    "MouseWheel": true,
+    "Gamepad": false,
+    "MouseMoveBucketMilliseconds": 10,
+    "CountdownSeconds": 0
+  },
+  "Playback": {
+    "ActivationMode": "Once",
+    "TargetMode": "ForegroundAtStart",
+    "FocusLossBehavior": "Continue",
+    "PassThroughHotkey": false,
+    "HotkeyScopedToTarget": false,
+    "TargetProcessName": "",
+    "TargetWindowTitle": "",
+    "Speed": 1.0,
+    "RandomizeTiming": false,
+    "TimingJitterMilliseconds": 10,
+    "RepeatCount": 1,
+    "RepeatDelayMilliseconds": 0,
+    "PreferScanCodes": false,
+    "InfoCardOverride": "Inherit",
+    "CustomTextOverride": "Inherit"
+  },
+  "Hotkey": {
+    "VirtualKey": 0,
+    "MouseButton": "None",
+    "Wheel": "None",
+    "Control": false,
+    "Alt": false,
+    "Shift": false,
+    "Windows": false
+  },
+  "Events": []
+}

@@ -1,0 +1,15 @@
+{
+  "folders": [
+    "Gaming",
+    "Gaming/Shooter",
+    "Work",
+    "Work/Daily"
+  ],
+  "macroCounts": {
+    "": 5,
+    "Gaming": 2,
+    "Gaming/Shooter": 1,
+    "Work": 2,
+    "Work/Daily": 1
+  }
+}

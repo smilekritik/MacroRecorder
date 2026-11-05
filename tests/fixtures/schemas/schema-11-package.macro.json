@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 11,
+  "id": "11111111-1111-1111-1111-111111111111",
+  "name": "Package Macro Schema 11",
+  "folder": "",
+  "description": "Portable macro package schema 11 format with camelCase fields.",
+  "isEnabled": true,
+  "tags": [
+    "portable",
+    "schema11"
+  ],
+  "modifiedAt": "2026-09-11T00:00:00+00:00",
+  "recording": {
+    "keyboard": true,
+    "mouseButtons": true,
+    "mouseMovement": true,
+    "mouseWheel": true,
+    "gamepad": false,
+    "mouseMoveBucketMilliseconds": 10,
+    "countdownSeconds": 0
+  },
+  "playback": {
+    "activationMode": "Once",
+    "targetMode": "ForegroundAtStart",
+    "focusLossBehavior": "Continue",
+    "passThroughHotkey": false,
+    "hotkeyScopedToTarget": false,
+    "targetProcessName": "",
+    "targetWindowTitle": "",
+    "speed": 1.0,
+    "randomizeTiming": false,
+    "timingJitterMilliseconds": 10,
+    "repeatCount": 1,
+    "repeatDelayMilliseconds": 0,
+    "preferScanCodes": false,
+    "infoCardOverride": "Inherit",
+    "customTextOverride": "Inherit"
+  },
+  "hotkey": {
+    "virtualKey": 112,
+    "mouseButton": "None",
+    "wheel": "None",
+    "control": false,
+    "alt": false,
+    "shift": false,
+    "windows": false
+  },
+  "events": [
+    {
+      "id": "b0000001-0000-0000-0000-000000000001",
+      "timeMicroseconds": 0,
+      "device": "Keyboard",
+      "type": "KeyDown",
+      "virtualKey": 112,
+      "scanCode": 59,
+      "extended": false,
+      "button": "None",
+      "deltaX": 0,
+      "deltaY": 0,
+      "wheelDelta": 0,
+      "absoluteMove": false,
+      "gamepadButton": "None",
+      "gamepadAxis": "None",
+      "axisValue": 0,
+      "padIndex": 0,
+      "text": "",
+      "comment": "F1 down",
+      "durationMicroseconds": 0,
+      "showOverlayTiming": true,
+      "pixelX": 0,
+      "pixelY": 0,
+      "pixelColor": 0,
+      "triggerCooldownMilliseconds": 3000,
+      "waitProcessName": "",
+      "waitWindowTitle": "",
+      "waitKeyVirtualKey": 0,
+      "waitTimeoutMilliseconds": 0,
+      "subMacroName": ""
+    }
+  ]
+}

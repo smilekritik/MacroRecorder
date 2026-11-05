@@ -1,0 +1,27 @@
+{
+  "Name": "sample-legacy",
+  "Events": [
+    {
+      "TimeMicroseconds": 5000,
+      "Device": "Keyboard",
+      "Type": "KeyDown",
+      "VirtualKey": 65,
+      "ScanCode": 30,
+      "Button": "None"
+    },
+    {
+      "TimeMicroseconds": 15000,
+      "Device": "Mouse",
+      "Type": "MouseMove",
+      "DeltaX": 15,
+      "DeltaY": -8,
+      "Button": "None"
+    },
+    {
+      "TimeMicroseconds": 25000,
+      "Device": "Mouse",
+      "Type": "MouseButtonDown",
+      "Button": "X1"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "SchemaVersion": 12,
+  "Id": "44444444-4444-4444-4444-444444444444",
+  "Name": "Sample Native Import",
+  "Description": "Imported through NativeJson importer",
+  "IsEnabled": true,
+  "Events": [
+    {
+      "TimeMicroseconds": 12000,
+      "Type": "KeyDown",
+      "VirtualKey": 69
+    }
+  ]
+}

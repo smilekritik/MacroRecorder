@@ -1,0 +1,10 @@
+{
+  "Count": 2,
+  "Failed": 0,
+  "Unconfirmed": 1,
+  "MeanMs": 0.2,
+  "MedianMs": 0.2,
+  "P95Ms": 0.3,
+  "P99Ms": 0.3,
+  "MaxMs": 0.4
+}

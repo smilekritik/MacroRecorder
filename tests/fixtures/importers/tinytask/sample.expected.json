@@ -1,0 +1,30 @@
+{
+  "Name": "sample",
+  "IsEnabled": false,
+  "Events": [
+    {
+      "TimeMicroseconds": 0,
+      "Type": "KeyDown",
+      "VirtualKey": 65,
+      "ScanCode": 30
+    },
+    {
+      "TimeMicroseconds": 5000,
+      "Type": "KeyUp",
+      "VirtualKey": 65,
+      "ScanCode": 30
+    },
+    {
+      "TimeMicroseconds": 10000,
+      "Type": "MouseMove",
+      "DeltaX": 100,
+      "DeltaY": 200,
+      "AbsoluteMove": true
+    },
+    {
+      "TimeMicroseconds": 12000,
+      "Type": "MouseButtonDown",
+      "Button": "Left"
+    }
+  ]
+}

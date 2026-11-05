@@ -1,0 +1,61 @@
+{
+  "name": "macro-recorder",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.3.4",
+  "engines": {
+    "node": ">=24.0.0 <25.0.0"
+  },
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "scripts": {
+    "build": "node scripts/build-app.cjs",
+    "build:ui": "node scripts/build-app.cjs --skip-native",
+    "package": "node scripts/package-app.cjs",
+    "verify:package": "node scripts/verify-package.cjs",
+    "start": "node apps/desktop/node_modules/electron/cli.js artifacts/desktop/bundle",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.{ts,tsx,js,mjs,json}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,mjs,json}\"",
+    "test": "node scripts/run-mandatory-vitest.cjs unit --config vitest.config.ts",
+    "test:compatibility": "node scripts/run-mandatory-vitest.cjs compatibility --config tests/compatibility/vitest.config.ts",
+    "test:rust": "cargo test --locked --manifest-path native/macro-recorder-native/Cargo.toml --target-dir artifacts/native/target",
+    "bench": "node tests/bench/engine-bench.cjs",
+    "rust:check": "cargo check --manifest-path native/macro-recorder-native/Cargo.toml --target-dir artifacts/native/target",
+    "check": "pnpm run typecheck && pnpm run lint && pnpm test && pnpm run test:compatibility && pnpm run test:rust",
+    "release": "pnpm run typecheck && pnpm run lint && pnpm test && pnpm run test:compatibility && pnpm run test:rust && pnpm run build && pnpm run package && pnpm run verify:package",
+    "test:ui:packaged": "playwright test --project=packaged --workers=1",
+    "test:ui:simulated": "node -e \"require('fs').rmSync('tests/e2e/.dist',{recursive:true,force:true})\" && playwright test --project=simulated"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.20.0",
+    "@napi-rs/cli": "2.18.4",
+    "@playwright/test": "1.50.1",
+    "@types/node": "22.13.4",
+    "esbuild": "0.24.2",
+    "eslint": "9.20.1",
+    "pe-library": "2.0.1",
+    "prettier": "3.5.1",
+    "resedit": "3.1.0",
+    "typescript": "5.7.3",
+    "typescript-eslint": "8.24.0",
+    "vitest": "3.0.5"
+  },
+  "description": "Record keyboard, mouse and gamepad input on Windows and replay it with a native timing engine.",
+  "license": "MIT",
+  "author": "smilekritik",
+  "homepage": "https://github.com/smilekritik/MacroRecorder",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smilekritik/MacroRecorder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/smilekritik/MacroRecorder/issues"
+  }
+}

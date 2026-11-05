@@ -1,0 +1,8 @@
+<Root><DefaultMacro><Major>AMC sample</Major><Description>description</Description>
+<KeyDown><Syntax>KeyDown 69 1
+Delay 30
+KeyUp 69 1
+Delay 20
+LeftDown 1
+Delay 10
+LeftUp 1</Syntax></KeyDown></DefaultMacro></Root>

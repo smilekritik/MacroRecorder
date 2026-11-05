@@ -1,0 +1,6 @@
+<Macro><Name>Razer sample</Name><MacroEvents>
+  <MacroEvent><Delay>15</Delay><KeyboardEvent><VirtualKey>65</VirtualKey><State>Down</State></KeyboardEvent></MacroEvent>
+  <MacroEvent><KeyboardEvent><VirtualKey>65</VirtualKey><State>Up</State></KeyboardEvent></MacroEvent>
+  <MacroEvent><MouseMovementEvent><X>120</X><Y>240</Y></MouseMovementEvent></MacroEvent>
+  <MacroEvent><MouseEvent><MouseButton>Left</MouseButton><State>Down</State></MouseEvent></MacroEvent>
+</MacroEvents></Macro>

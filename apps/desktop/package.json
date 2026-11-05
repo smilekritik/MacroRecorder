@@ -1,0 +1,27 @@
+{
+  "name": "@macro-recorder/desktop",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "../../artifacts/desktop/bundle/main.cjs",
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.4",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "autoprefixer": "10.4.20",
+    "electron": "34.2.0",
+    "postcss": "8.5.1",
+    "tailwindcss": "3.4.17",
+    "typescript": "5.7.3"
+  },
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "x64"
+  ]
+}

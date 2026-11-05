@@ -1,0 +1,28 @@
+[
+  {
+    "MacroId": "77777777-7777-7777-7777-777777777771",
+    "MacroName": "Production Build Runner",
+    "RunCount": 24,
+    "LastRunAt": "2026-09-11T00:00:00+00:00",
+    "LastActivation": "manual",
+    "TotalDurationMs": 144000.0,
+    "AverageJitterMs": 1.15,
+    "MaxJitterMs": 3.8,
+    "TotalDispatched": 1200,
+    "TotalFailed": 0,
+    "TotalUnconfirmed": 12
+  },
+  {
+    "MacroId": "77777777-7777-7777-7777-777777777772",
+    "MacroName": "Pixel Health Poller",
+    "RunCount": 150,
+    "LastRunAt": "2026-09-11T00:00:00+00:00",
+    "LastActivation": "auto-trigger",
+    "TotalDurationMs": 7500.0,
+    "AverageJitterMs": 0.45,
+    "MaxJitterMs": 1.2,
+    "TotalDispatched": 300,
+    "TotalFailed": 2,
+    "TotalUnconfirmed": 0
+  }
+]

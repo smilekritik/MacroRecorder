@@ -1,0 +1,10 @@
+{
+  "first": {
+    "Id": "88888888-8888-8888-8888-888888888888",
+    "Name": "Original Macro"
+  },
+  "second": {
+    "Name": "Original Macro 2",
+    "RequiresNewId": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Name": "AMC sample",
+  "Description": "description",
+  "IsEnabled": false,
+  "DurationMicroseconds": 60000,
+  "Events": [
+    {
+      "TimeMicroseconds": 0,
+      "Type": "KeyDown",
+      "VirtualKey": 69
+    },
+    {
+      "TimeMicroseconds": 30000,
+      "Type": "KeyUp",
+      "VirtualKey": 69
+    },
+    {
+      "TimeMicroseconds": 50000,
+      "Type": "MouseButtonDown",
+      "Button": "Left"
+    },
+    {
+      "TimeMicroseconds": 60000,
+      "Type": "MouseButtonUp",
+      "Button": "Left"
+    }
+  ]
+}

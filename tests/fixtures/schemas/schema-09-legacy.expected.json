@@ -1,0 +1,81 @@
+{
+  "SchemaVersion": 12,
+  "Id": "11111111-1111-1111-1111-111111111109",
+  "Name": "Legacy Schema 9 Macro",
+  "Folder": "Old",
+  "Description": "Legacy schema 9 without comments property",
+  "IsEnabled": true,
+  "Tags": [
+    "legacy",
+    "v9"
+  ],
+  "ModifiedAt": "2026-09-11T00:00:00+00:00",
+  "Recording": {
+    "Keyboard": true,
+    "MouseButtons": true,
+    "MouseMovement": true,
+    "MouseWheel": true,
+    "Gamepad": false,
+    "MouseMoveBucketMilliseconds": 10,
+    "CountdownSeconds": 0
+  },
+  "Playback": {
+    "ActivationMode": "Once",
+    "TargetMode": "ForegroundAtStart",
+    "FocusLossBehavior": "Continue",
+    "PassThroughHotkey": false,
+    "HotkeyScopedToTarget": false,
+    "TargetProcessName": "",
+    "TargetWindowTitle": "",
+    "Speed": 1.0,
+    "RandomizeTiming": false,
+    "TimingJitterMilliseconds": 10,
+    "RepeatCount": 1,
+    "RepeatDelayMilliseconds": 0,
+    "PreferScanCodes": false,
+    "InfoCardOverride": "Inherit",
+    "CustomTextOverride": "Inherit"
+  },
+  "Hotkey": {
+    "VirtualKey": 65,
+    "MouseButton": "None",
+    "Wheel": "None",
+    "Control": true,
+    "Alt": false,
+    "Shift": false,
+    "Windows": false
+  },
+  "Events": [
+    {
+      "Id": "d0000001-0000-0000-0000-000000000001",
+      "TimeMicroseconds": 15000,
+      "Device": "Keyboard",
+      "Type": "KeyDown",
+      "VirtualKey": 65,
+      "ScanCode": 0,
+      "Extended": false,
+      "Button": "None",
+      "DeltaX": 0,
+      "DeltaY": 0,
+      "WheelDelta": 0,
+      "AbsoluteMove": false,
+      "GamepadButton": "None",
+      "GamepadAxis": "None",
+      "AxisValue": 0,
+      "PadIndex": 0,
+      "Text": "",
+      "Comment": "",
+      "DurationMicroseconds": 0,
+      "ShowOverlayTiming": true,
+      "PixelX": 0,
+      "PixelY": 0,
+      "PixelColor": 0,
+      "TriggerCooldownMilliseconds": 3000,
+      "WaitProcessName": "",
+      "WaitWindowTitle": "",
+      "WaitKeyVirtualKey": 0,
+      "WaitTimeoutMilliseconds": 0,
+      "SubMacroName": ""
+    }
+  ]
+}

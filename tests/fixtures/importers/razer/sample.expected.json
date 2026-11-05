@@ -1,0 +1,28 @@
+{
+  "Name": "Razer sample",
+  "IsEnabled": false,
+  "Events": [
+    {
+      "TimeMicroseconds": 15000,
+      "Type": "KeyDown",
+      "VirtualKey": 65
+    },
+    {
+      "TimeMicroseconds": 15000,
+      "Type": "KeyUp",
+      "VirtualKey": 65
+    },
+    {
+      "TimeMicroseconds": 15000,
+      "Type": "MouseMove",
+      "DeltaX": 120,
+      "DeltaY": 240,
+      "AbsoluteMove": true
+    },
+    {
+      "TimeMicroseconds": 15000,
+      "Type": "MouseButtonDown",
+      "Button": "Left"
+    }
+  ]
+}

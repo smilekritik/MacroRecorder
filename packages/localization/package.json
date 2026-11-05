@@ -1,0 +1,41 @@
+{
+  "name": "@macro-recorder/localization",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "test": "vitest run --root ../.. packages/localization",
+    "typecheck": "tsc --noEmit",
+    "check:coverage": "vitest run --root ../.. packages/localization/tests/coverage.test.ts"
+  },
+  "peerDependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./catalogs/ru.json": "./src/catalogs/ru.json",
+    "./catalogs/en.json": "./src/catalogs/en.json",
+    "./catalogs/*": "./src/catalogs/*",
+    "./extraction": {
+      "types": "./src/extraction/index.ts",
+      "import": "./src/extraction/index.ts",
+      "default": "./src/extraction/index.ts"
+    },
+    "./checks": {
+      "types": "./src/checks/index.ts",
+      "import": "./src/checks/index.ts",
+      "default": "./src/checks/index.ts"
+    }
+  }
+}

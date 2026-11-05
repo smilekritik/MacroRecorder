@@ -1,0 +1,24 @@
+{
+  "SchemaVersion": 5,
+  "Id": "11111111-1111-1111-1111-111111111105",
+  "Name": "Legacy Schema 5 ToggleRepeat Macro",
+  "Folder": "",
+  "Description": "Macro from schema v5 using ToggleRepeat activation",
+  "IsEnabled": true,
+  "Playback": {
+    "ActivationMode": "ToggleRepeat",
+    "Speed": 2.0,
+    "RepeatCount": 5
+  },
+  "Hotkey": {
+    "VirtualKey": 113
+  },
+  "Events": [
+    {
+      "TimeMicroseconds": 10000,
+      "Device": "Keyboard",
+      "Type": "KeyDown",
+      "VirtualKey": 32
+    }
+  ]
+}

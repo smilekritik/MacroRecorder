@@ -1,0 +1,40 @@
+{
+  "Name": "sample",
+  "IsEnabled": false,
+  "Hotkey": {
+    "MouseButton": "X1"
+  },
+  "DurationMicroseconds": 50000,
+  "Events": [
+    {
+      "TimeMicroseconds": 0,
+      "Type": "KeyDown",
+      "VirtualKey": 69
+    },
+    {
+      "TimeMicroseconds": 30000,
+      "Type": "KeyUp",
+      "VirtualKey": 69
+    },
+    {
+      "TimeMicroseconds": 30000,
+      "Type": "MouseButtonDown",
+      "Button": "Left"
+    },
+    {
+      "TimeMicroseconds": 40000,
+      "Type": "MouseButtonUp",
+      "Button": "Left"
+    },
+    {
+      "TimeMicroseconds": 40000,
+      "Type": "MouseButtonDown",
+      "Button": "Left"
+    },
+    {
+      "TimeMicroseconds": 50000,
+      "Type": "MouseButtonUp",
+      "Button": "Left"
+    }
+  ]
+}

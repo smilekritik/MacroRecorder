@@ -1,0 +1,41 @@
+{
+  "Name": "sample",
+  "IsEnabled": false,
+  "Hotkey": {
+    "VirtualKey": 118
+  },
+  "Events": [
+    {
+      "TimeMicroseconds": 0,
+      "Type": "Comment",
+      "Text": "recorded by AU3Recorder"
+    },
+    {
+      "TimeMicroseconds": 20000,
+      "Type": "KeyDown",
+      "VirtualKey": 9
+    },
+    {
+      "TimeMicroseconds": 20000,
+      "Type": "KeyUp",
+      "VirtualKey": 9
+    },
+    {
+      "TimeMicroseconds": 20000,
+      "Type": "MouseMove",
+      "DeltaX": 50,
+      "DeltaY": 60,
+      "AbsoluteMove": true
+    },
+    {
+      "TimeMicroseconds": 20000,
+      "Type": "MouseButtonDown",
+      "Button": "Left"
+    },
+    {
+      "TimeMicroseconds": 20000,
+      "Type": "MouseButtonUp",
+      "Button": "Left"
+    }
+  ]
+}

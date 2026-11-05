@@ -1,0 +1,79 @@
+{
+  "Theme": "Dark",
+  "LanguageCode": "ru",
+  "MacroLibraryPath": "",
+  "StartWithWindows": true,
+  "ShowMacroInformation": true,
+  "GamepadDriverPromptDismissed": false,
+  "GamepadOutput": "Xbox360",
+  "HideRealGamepad": false,
+  "OverlayScalePercent": 100,
+  "OverlayInfoTransparencyPercent": 0,
+  "ShowOverlayAnnotations": true,
+  "ShowOverlayAnnotationTiming": true,
+  "OverlayAnnotationScalePercent": 100,
+  "OverlayAnnotationTransparencyPercent": 0,
+  "OverlayInfoX": 1.0,
+  "OverlayInfoY": 0.0,
+  "OverlayAnnotationX": 1.0,
+  "OverlayAnnotationY": 1.0,
+  "ShowOverlayState": true,
+  "ShowOverlayMacroName": true,
+  "ShowOverlayCurrentAction": true,
+  "ShowOverlaySchedule": true,
+  "ShowOverlayLatency": true,
+  "RecordingStartHotkey": {
+    "VirtualKey": 118,
+    "MouseButton": "None",
+    "Wheel": "None",
+    "Control": false,
+    "Alt": false,
+    "Shift": false,
+    "Windows": false
+  },
+  "RecordingStopHotkey": {
+    "VirtualKey": 119,
+    "MouseButton": "None",
+    "Wheel": "None",
+    "Control": false,
+    "Alt": false,
+    "Shift": false,
+    "Windows": false
+  },
+  "PlaybackPauseHotkey": {
+    "VirtualKey": 120,
+    "MouseButton": "None",
+    "Wheel": "None",
+    "Control": false,
+    "Alt": false,
+    "Shift": false,
+    "Windows": false
+  },
+  "EmergencyStopHotkey": {
+    "VirtualKey": 121,
+    "MouseButton": "None",
+    "Wheel": "None",
+    "Control": false,
+    "Alt": false,
+    "Shift": false,
+    "Windows": false
+  },
+  "PixelCaptureHotkey": {
+    "VirtualKey": 116,
+    "MouseButton": "None",
+    "Wheel": "None",
+    "Control": false,
+    "Alt": false,
+    "Shift": false,
+    "Windows": false
+  },
+  "BindMapHotkey": {
+    "VirtualKey": 123,
+    "MouseButton": "None",
+    "Wheel": "None",
+    "Control": false,
+    "Alt": false,
+    "Shift": false,
+    "Windows": false
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "SchemaVersion": 12,
+  "Id": "11111111-1111-1111-1111-111111111110",
+  "Name": "Schema 10 Annotations Macro",
+  "Folder": "Annotated",
+  "Description": "Macro exercising Schema 10 Comment rows and FocusLossBehavior",
+  "IsEnabled": true,
+  "Tags": [
+    "annotations"
+  ],
+  "ModifiedAt": "2026-09-11T00:00:00+00:00",
+  "Recording": {
+    "Keyboard": true,
+    "MouseButtons": true,
+    "MouseMovement": false,
+    "MouseWheel": false,
+    "Gamepad": false,
+    "MouseMoveBucketMilliseconds": 10,
+    "CountdownSeconds": 0
+  },
+  "Playback": {
+    "ActivationMode": "WhileHeld",
+    "TargetMode": "ForegroundAtStart",
+    "FocusLossBehavior": "Continue",
+    "PassThroughHotkey": false,
+    "HotkeyScopedToTarget": false,
+    "TargetProcessName": "",
+    "TargetWindowTitle": "",
+    "Speed": 1.0,
+    "RandomizeTiming": false,
+    "TimingJitterMilliseconds": 10,
+    "RepeatCount": 1,
+    "RepeatDelayMilliseconds": 0,
+    "PreferScanCodes": false,
+    "InfoCardOverride": "Inherit",
+    "CustomTextOverride": "Inherit"
+  },
+  "Hotkey": {
+    "VirtualKey": 0,
+    "MouseButton": "None",
+    "Wheel": "Down",
+    "Control": true,
+    "Alt": false,
+    "Shift": false,
+    "Windows": false
+  },
+  "Events": [
+    {
+      "Id": "c0000001-0000-0000-0000-000000000001",
+      "TimeMicroseconds": 0,
+      "Device": "Keyboard",
+      "Type": "Comment",
+      "Text": "Section header comment",
+      "Comment": ""
+    },
+    {
+      "Id": "c0000001-0000-0000-0000-000000000002",
+      "TimeMicroseconds": 25000,
+      "Device": "Mouse",
+      "Type": "MouseButtonDown",
+      "Button": "Right",
+      "Comment": "Right click for menu"
+    }
+  ]
+}

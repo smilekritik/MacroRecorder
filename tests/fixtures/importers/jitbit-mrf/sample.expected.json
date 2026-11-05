@@ -1,0 +1,48 @@
+{
+  "Name": "sample",
+  "IsEnabled": false,
+  "Events": [
+    {
+      "TimeMicroseconds": 30000,
+      "Type": "KeyDown",
+      "VirtualKey": 65
+    },
+    {
+      "TimeMicroseconds": 30000,
+      "Type": "KeyUp",
+      "VirtualKey": 65
+    },
+    {
+      "TimeMicroseconds": 30000,
+      "Type": "MouseMove",
+      "DeltaX": 100,
+      "DeltaY": 200,
+      "AbsoluteMove": true
+    },
+    {
+      "TimeMicroseconds": 30000,
+      "Type": "MouseButtonDown",
+      "Button": "Left"
+    },
+    {
+      "TimeMicroseconds": 30000,
+      "Type": "MouseButtonUp",
+      "Button": "Left"
+    },
+    {
+      "TimeMicroseconds": 30000,
+      "Type": "TypeText",
+      "Text": "hello : world"
+    },
+    {
+      "TimeMicroseconds": 30000,
+      "Type": "Comment",
+      "Text": "note"
+    },
+    {
+      "TimeMicroseconds": 30000,
+      "Type": "Comment",
+      "Text": "GOTO : loop"
+    }
+  ]
+}

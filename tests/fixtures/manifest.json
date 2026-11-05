@@ -1,0 +1,673 @@
+{
+  "version": 1,
+  "createdAtUtc": "2026-09-11T00:00:00+00:00",
+  "fixtureCount": 111,
+  "fixtures": [
+    {
+      "path": "dpi/source-dpi-144-target-96.expected.json",
+      "category": "dpi",
+      "sha256": "e38aaaf2111445ec0b21a745c966265b34c8976d2563b33f35ee0b88d8958990",
+      "sizeBytes": 526
+    },
+    {
+      "path": "dpi/source-dpi-144-target-96.expected.warnings.json",
+      "category": "dpi",
+      "sha256": "dde497aed2e7bbf0b7fd5520efafccabfe7b09f1e60afc090812f49b11507a4a",
+      "sizeBytes": 105
+    },
+    {
+      "path": "dpi/source-dpi-144.mrmacro",
+      "category": "dpi",
+      "sha256": "a2859e63ff52d48bce5bd3a881864b476febe8e1ffe5f87a36a57086b96e230f",
+      "sizeBytes": 675
+    },
+    {
+      "path": "dpi/source-dpi-96-target-144.expected.json",
+      "category": "dpi",
+      "sha256": "5a500861df7d89305a794f7a438dc1b5f5e306d139671ab6d77009f488426fe2",
+      "sizeBytes": 524
+    },
+    {
+      "path": "dpi/source-dpi-96-target-144.expected.warnings.json",
+      "category": "dpi",
+      "sha256": "72b769d431fc48fc72fe1e3542136f7b848a68d41bbe0d642c3a529a09c8ff59",
+      "sizeBytes": 105
+    },
+    {
+      "path": "dpi/source-dpi-96.mrmacro",
+      "category": "dpi",
+      "sha256": "b3136c3d014a567496032cad65f738df9a58c3ab64503aea6dae397d96d74aad",
+      "sizeBytes": 673
+    },
+    {
+      "path": "dpi/source-dpi-omitted.expected.json",
+      "category": "dpi",
+      "sha256": "a7a3031b565ce6cddbf56e257d27ef7d26a3527cd6167ed630491a660f1f1f34",
+      "sizeBytes": 522
+    },
+    {
+      "path": "dpi/source-dpi-omitted.expected.warnings.json",
+      "category": "dpi",
+      "sha256": "e2d410509cf4d25c540518bbbdcdeea17d7912688941c223de74c2689027679b",
+      "sizeBytes": 118
+    },
+    {
+      "path": "dpi/source-dpi-omitted.mrmacro",
+      "category": "dpi",
+      "sha256": "5a76dce4f90827ecbc19cd297c57c37531c9490ac74cfcc9d3eda2b9d93f1c8c",
+      "sizeBytes": 657
+    },
+    {
+      "path": "exporters/autohotkey-v2/expected.ahk",
+      "category": "exporters",
+      "sha256": "060ee05467ab5bd74379dd63d711165cdf9f0a8db4ed9c8c7e3af9458f761f7d",
+      "sizeBytes": 484
+    },
+    {
+      "path": "exporters/autohotkey-v2/source.macro.json",
+      "category": "exporters",
+      "sha256": "4d28d7869b1357606d3711635ddb156547681e5e1f973ad479d00a4edeab0680",
+      "sizeBytes": 1182
+    },
+    {
+      "path": "exporters/diagnostic-bundle/expected-bundle.zip",
+      "category": "exporters",
+      "sha256": "c91455e87b84b390a0632ad1e3df0d29876ec6973ee9e85004007c79d65d972f",
+      "sizeBytes": 379
+    },
+    {
+      "path": "exporters/diagnostic-bundle/source-timing.json",
+      "category": "exporters",
+      "sha256": "21017ea77407913fb10a1f93462fa77472561b0169b99f4f4aa3dd1fbd4faf97",
+      "sizeBytes": 136
+    },
+    {
+      "path": "exporters/diagnostics-csv/expected.csv",
+      "category": "exporters",
+      "sha256": "0156d8f9b56555b16728d3665b527951f23b62092fb6243012e2d287783b7ccb",
+      "sizeBytes": 286
+    },
+    {
+      "path": "exporters/diagnostics-csv/source-receipts.json",
+      "category": "exporters",
+      "sha256": "8cca6631571c3d231e3006d1e50b0ae252f7ef1c224b9404ffa225afe243c8f0",
+      "sizeBytes": 742
+    },
+    {
+      "path": "exporters/diagnostics-json/expected.json",
+      "category": "exporters",
+      "sha256": "8cca6631571c3d231e3006d1e50b0ae252f7ef1c224b9404ffa225afe243c8f0",
+      "sizeBytes": 742
+    },
+    {
+      "path": "exporters/diagnostics-json/source-receipts.json",
+      "category": "exporters",
+      "sha256": "8cca6631571c3d231e3006d1e50b0ae252f7ef1c224b9404ffa225afe243c8f0",
+      "sizeBytes": 742
+    },
+    {
+      "path": "exporters/library-backup/expected.mrbackup",
+      "category": "exporters",
+      "sha256": "d49b9571922f8299f429e523bf6671f259b9af219fea12640a2caad719c1259b",
+      "sizeBytes": 1168
+    },
+    {
+      "path": "exporters/macro-package/expected.mrmacro",
+      "category": "exporters",
+      "sha256": "5da0bec3bed31720bedf6878bc0b56cfad0675804882395c459f4b11ae45436e",
+      "sizeBytes": 726
+    },
+    {
+      "path": "exporters/macro-package/source.macro.json",
+      "category": "exporters",
+      "sha256": "3ab1b032ac3d6313b674273ceed72c20e87e3cef968f98eb14f52cb282a986cb",
+      "sizeBytes": 577
+    },
+    {
+      "path": "exporters/native-json/expected.macro.json",
+      "category": "exporters",
+      "sha256": "3ab1b032ac3d6313b674273ceed72c20e87e3cef968f98eb14f52cb282a986cb",
+      "sizeBytes": 577
+    },
+    {
+      "path": "exporters/native-json/source.macro.json",
+      "category": "exporters",
+      "sha256": "3ab1b032ac3d6313b674273ceed72c20e87e3cef968f98eb14f52cb282a986cb",
+      "sizeBytes": 577
+    },
+    {
+      "path": "history/corrupted-run-history.json",
+      "category": "history",
+      "sha256": "af7ec2787faf3a57cba886dc55fbb4e01778ac38c44b428d059682e1f394febe",
+      "sizeBytes": 82
+    },
+    {
+      "path": "history/valid-run-history.expected.json",
+      "category": "history",
+      "sha256": "4360165a62f4e8f7227a124aaa84b714137a5017f07d48924f86ac45dce21156",
+      "sizeBytes": 742
+    },
+    {
+      "path": "history/valid-run-history.json",
+      "category": "history",
+      "sha256": "4360165a62f4e8f7227a124aaa84b714137a5017f07d48924f86ac45dce21156",
+      "sizeBytes": 742
+    },
+    {
+      "path": "importers/amc/sample.amc",
+      "category": "importers",
+      "sha256": "577846b75890ee3d5dd91e3518eaad1b4a5ee638abe57949e427e5169bf5f11c",
+      "sizeBytes": 213
+    },
+    {
+      "path": "importers/amc/sample.expected.json",
+      "category": "importers",
+      "sha256": "ff1a84e3069fbeabfc791e3f2a81b0fe3aed8b5d881fa625f0fb9803ef0051d1",
+      "sizeBytes": 516
+    },
+    {
+      "path": "importers/amc/sample.expected.warnings.json",
+      "category": "importers",
+      "sha256": "6b5e23f69c938ab8b475d114951fb1332d03b58780efedf04892fd1c97d7bfb8",
+      "sizeBytes": 123
+    },
+    {
+      "path": "importers/autohotkey/comments.ahk",
+      "category": "importers",
+      "sha256": "7e503e502319ec1f2b91367fdbdaa295a0c622876cf761bf896d91f30a092e32",
+      "sizeBytes": 202
+    },
+    {
+      "path": "importers/autohotkey/comments.expected.json",
+      "category": "importers",
+      "sha256": "00b7ca139d745d82da0825e4b0efd07df908c0d613c35337f285a1975c45f02f",
+      "sizeBytes": 205
+    },
+    {
+      "path": "importers/autohotkey/comments.expected.warnings.json",
+      "category": "importers",
+      "sha256": "ba408c359e9661af6959d8bf0ccee4280fae972b8663b9b71381c4a5690e67c6",
+      "sizeBytes": 111
+    },
+    {
+      "path": "importers/autohotkey/sample.ahk",
+      "category": "importers",
+      "sha256": "b8d1c643e69b688ff3235df44d66df176d3858bf2253391379870af667bbedea",
+      "sizeBytes": 195
+    },
+    {
+      "path": "importers/autohotkey/sample.expected.json",
+      "category": "importers",
+      "sha256": "6584ed58277d419c3cbb9b59fdcf7e769561dfc42a890b215879b8056391981a",
+      "sizeBytes": 725
+    },
+    {
+      "path": "importers/autohotkey/sample.expected.warnings.json",
+      "category": "importers",
+      "sha256": "ba408c359e9661af6959d8bf0ccee4280fae972b8663b9b71381c4a5690e67c6",
+      "sizeBytes": 111
+    },
+    {
+      "path": "importers/autoit/sample.au3",
+      "category": "importers",
+      "sha256": "069d97060e262956a2f225cee4e2eaac0b2e02b8d15453037075138d03935f3c",
+      "sizeBytes": 105
+    },
+    {
+      "path": "importers/autoit/sample.expected.json",
+      "category": "importers",
+      "sha256": "a54756bdfcbc2442e4f71d437762ceaf37a6caf164a6eebb3b27d02d3de83652",
+      "sizeBytes": 737
+    },
+    {
+      "path": "importers/autoit/sample.expected.warnings.json",
+      "category": "importers",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "sizeBytes": 3
+    },
+    {
+      "path": "importers/jitbit-mrf/sample.expected.json",
+      "category": "importers",
+      "sha256": "235af477e604a6b55e2eb05011c1c245d7291297a09d990df45953d86fe9ea1a",
+      "sizeBytes": 886
+    },
+    {
+      "path": "importers/jitbit-mrf/sample.expected.warnings.json",
+      "category": "importers",
+      "sha256": "a822bf56a305355e0466911dd4da81aaa337864440b145a83b0065646b353914",
+      "sizeBytes": 262
+    },
+    {
+      "path": "importers/jitbit-mrf/sample.mrf",
+      "category": "importers",
+      "sha256": "413683281cbdd321bc1e697348cd780be31cdf8d2892e2909a8c2f02f98597e2",
+      "sizeBytes": 127
+    },
+    {
+      "path": "importers/legacy-json/sample-legacy.expected.json",
+      "category": "importers",
+      "sha256": "f6e8c021a28ea406b52f4e701eaf075161a97b42227d3d2aad6454359013648f",
+      "sizeBytes": 338
+    },
+    {
+      "path": "importers/legacy-json/sample-legacy.expected.warnings.json",
+      "category": "importers",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "sizeBytes": 3
+    },
+    {
+      "path": "importers/legacy-json/sample-legacy.json",
+      "category": "importers",
+      "sha256": "4bf688a72763332dc2d83a7c2fd027266a6413ab34a3fef70435934cefaa5fc3",
+      "sizeBytes": 252
+    },
+    {
+      "path": "importers/library-backup/sample.expected.json",
+      "category": "importers",
+      "sha256": "4158e5c23bb4643ace15219ea46d5d675ef4eb7164d75ee718e6a88823325765",
+      "sizeBytes": 167
+    },
+    {
+      "path": "importers/library-backup/sample.expected.warnings.json",
+      "category": "importers",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "sizeBytes": 3
+    },
+    {
+      "path": "importers/library-backup/sample.mrbackup",
+      "category": "importers",
+      "sha256": "d49b9571922f8299f429e523bf6671f259b9af219fea12640a2caad719c1259b",
+      "sizeBytes": 1168
+    },
+    {
+      "path": "importers/macro-package/sample.expected.json",
+      "category": "importers",
+      "sha256": "2bb5660e59dc01bc8e04bcace6d669e9239eb389ee385cdf7c97de583ff8aff5",
+      "sizeBytes": 1664
+    },
+    {
+      "path": "importers/macro-package/sample.expected.warnings.json",
+      "category": "importers",
+      "sha256": "dd66c0ba00d7932f148aa6b96950c74c379cc2399083412309510f83b35febe2",
+      "sizeBytes": 206
+    },
+    {
+      "path": "importers/macro-package/sample.mrmacro",
+      "category": "importers",
+      "sha256": "f4f57b13b39c37029edd9c050d39269c21d3829b49d820a9b1cf350a31e2cec7",
+      "sizeBytes": 1080
+    },
+    {
+      "path": "importers/native-json/sample.macro.expected.json",
+      "category": "importers",
+      "sha256": "5f51e7a6c9166cb3d14805554bbfea38160cd38cca699ed417281165ed0a53e4",
+      "sizeBytes": 299
+    },
+    {
+      "path": "importers/native-json/sample.macro.expected.warnings.json",
+      "category": "importers",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "sizeBytes": 3
+    },
+    {
+      "path": "importers/native-json/sample.macro.json",
+      "category": "importers",
+      "sha256": "5950894addf186866cb33342cb065a7b6b7c54a6d5ac5174eb3ecaa442e24bfe",
+      "sizeBytes": 298
+    },
+    {
+      "path": "importers/razer/sample.expected.json",
+      "category": "importers",
+      "sha256": "93d1f46e91637f41dcb25a60b4d256caae707740661e2103c902cc932f09a496",
+      "sizeBytes": 499
+    },
+    {
+      "path": "importers/razer/sample.expected.warnings.json",
+      "category": "importers",
+      "sha256": "4fac37492c5ef6ad6084a8ea6607b8f91b945d3d78608b0cedda9d3d25c70214",
+      "sizeBytes": 125
+    },
+    {
+      "path": "importers/razer/sample.xml",
+      "category": "importers",
+      "sha256": "cd1738c7d0580c391bfaa54f87a372e9409620cf461cf0f4ca83ebdd911d259f",
+      "sizeBytes": 486
+    },
+    {
+      "path": "importers/tinytask/sample.expected.json",
+      "category": "importers",
+      "sha256": "d686e699b9c19b6becf1c349b14fcb26a7473434c86f0db4d3568d6eb050d255",
+      "sizeBytes": 532
+    },
+    {
+      "path": "importers/tinytask/sample.expected.warnings.json",
+      "category": "importers",
+      "sha256": "8bd5d8baf74487339986c00af5a41c9d05c5be6d3bc523f582023218b604a5b0",
+      "sizeBytes": 110
+    },
+    {
+      "path": "importers/tinytask/sample.rec",
+      "category": "importers",
+      "sha256": "0e317c1c6a851f4c0de58d2ead38b79da5cb1c0acac6e7ce3ff3425b9b1f6811",
+      "sizeBytes": 88
+    },
+    {
+      "path": "packages/tampered-checksum.mrbackup",
+      "category": "packages",
+      "sha256": "781f36380403a7f89a3349b39f794ee2a7bbe063fcad24e2b486d52b4c107359",
+      "sizeBytes": 921
+    },
+    {
+      "path": "packages/tampered-checksum.mrmacro",
+      "category": "packages",
+      "sha256": "aa9ea7bb8ec834d2c7ade01996518d03ebc0e2996516be37ac12d1e96012e8e6",
+      "sizeBytes": 455
+    },
+    {
+      "path": "packages/tampered-manifest-bad-format.mrbackup",
+      "category": "packages",
+      "sha256": "33fab9d84c9d7ef0a1e595c82bc99f79be5a1b5ccb6167e7bebc4eb5efff7396",
+      "sizeBytes": 722
+    },
+    {
+      "path": "packages/tampered-manifest-bad-format.mrmacro",
+      "category": "packages",
+      "sha256": "43fc06c70cbd9a757dfc1b3a9a95c1bad6bc1151bf91b4ad43f22dc212090a14",
+      "sizeBytes": 1075
+    },
+    {
+      "path": "packages/tampered-manifest-unsupported-version.mrmacro",
+      "category": "packages",
+      "sha256": "1f7eedde11c473f8e05d94e85f97cc338f38ea2fba56ced2d0be6257e3af2465",
+      "sizeBytes": 1081
+    },
+    {
+      "path": "packages/tampered-missing-macro.mrmacro",
+      "category": "packages",
+      "sha256": "c571d1f610c28720ad08e449aa1325ac34491af7d972d98cc4a3eb9ebd5a4f92",
+      "sizeBytes": 313
+    },
+    {
+      "path": "packages/tampered-missing-manifest.mrbackup",
+      "category": "packages",
+      "sha256": "1e364b957580fe2a9f39c2d7a61a2a91ba9521b6f70be6f1798165e307474cff",
+      "sizeBytes": 436
+    },
+    {
+      "path": "packages/valid.mrbackup",
+      "category": "packages",
+      "sha256": "d49b9571922f8299f429e523bf6671f259b9af219fea12640a2caad719c1259b",
+      "sizeBytes": 1168
+    },
+    {
+      "path": "packages/valid.mrbackup.expected.json",
+      "category": "packages",
+      "sha256": "4158e5c23bb4643ace15219ea46d5d675ef4eb7164d75ee718e6a88823325765",
+      "sizeBytes": 167
+    },
+    {
+      "path": "packages/valid.mrbackup.manifest.json",
+      "category": "packages",
+      "sha256": "f2df4f72f5923e8d6116138c166ae58922eb837b28b1d89737c1b1a872cba361",
+      "sizeBytes": 245
+    },
+    {
+      "path": "packages/valid.mrmacro",
+      "category": "packages",
+      "sha256": "f4f57b13b39c37029edd9c050d39269c21d3829b49d820a9b1cf350a31e2cec7",
+      "sizeBytes": 1080
+    },
+    {
+      "path": "packages/valid.mrmacro.expected.json",
+      "category": "packages",
+      "sha256": "2bb5660e59dc01bc8e04bcace6d669e9239eb389ee385cdf7c97de583ff8aff5",
+      "sizeBytes": 1664
+    },
+    {
+      "path": "packages/valid.mrmacro.expected.warnings.json",
+      "category": "packages",
+      "sha256": "dd66c0ba00d7932f148aa6b96950c74c379cc2399083412309510f83b35febe2",
+      "sizeBytes": 206
+    },
+    {
+      "path": "packages/valid.mrmacro.manifest.json",
+      "category": "packages",
+      "sha256": "7b8057e9997c4890b245c77a970f2c4a5a1cc09f6f2eadc20ecbf2df456c3442",
+      "sizeBytes": 278
+    },
+    {
+      "path": "recovery/corrupted-macro-syntax-error.macro.json",
+      "category": "recovery",
+      "sha256": "c3fc5738e4593ef8426d5558a48d5976c22350e2fd479fafdd7e9e7bbc2e8f49",
+      "sizeBytes": 66
+    },
+    {
+      "path": "recovery/leftover-atomic-tmp-file.macro.json.tmp",
+      "category": "recovery",
+      "sha256": "021113829d79011657502f590303d17de8d6aae285bc07b40a68df1caad7575c",
+      "sizeBytes": 49
+    },
+    {
+      "path": "recovery/duplicate-ids/duplicate-ids.expected.json",
+      "category": "recovery",
+      "sha256": "8f8cefc2266206193040ca119121a59e340da0d4e7f054aedd16d7f682127b92",
+      "sizeBytes": 177
+    },
+    {
+      "path": "recovery/duplicate-ids/macro-1.macro.json",
+      "category": "recovery",
+      "sha256": "7b111728480dd83d3c7c8d233a3446a46fbf44d2eb559e08c8ff34790027379b",
+      "sizeBytes": 179
+    },
+    {
+      "path": "recovery/duplicate-ids/macro-2-same-id.macro.json",
+      "category": "recovery",
+      "sha256": "7b111728480dd83d3c7c8d233a3446a46fbf44d2eb559e08c8ff34790027379b",
+      "sizeBytes": 179
+    },
+    {
+      "path": "recovery/folder-tree/RootMacro.macro.json",
+      "category": "recovery",
+      "sha256": "d23bb8caeb6f42e968080e0561db57901e53cc2713b403e73c4f6dc92b29ebd4",
+      "sizeBytes": 81
+    },
+    {
+      "path": "recovery/folder-tree/folder-tree.expected.json",
+      "category": "recovery",
+      "sha256": "6f98aeb1274ae1ec509bba0e8db692feb2b9579f1af0c7bf5514862d309bbeb7",
+      "sizeBytes": 200
+    },
+    {
+      "path": "recovery/folder-tree/Gaming/Combo.macro.json",
+      "category": "recovery",
+      "sha256": "24f7fae002d03de788a20a134d421aa692ff06b07094472290a071460c67a0d6",
+      "sizeBytes": 83
+    },
+    {
+      "path": "recovery/folder-tree/Gaming/Shooter/Aim.macro.json",
+      "category": "recovery",
+      "sha256": "6cf82c50e04058d809e60558d0d3794f8d7a448f963c23f428f9f0edcbe26912",
+      "sizeBytes": 89
+    },
+    {
+      "path": "recovery/folder-tree/Work/Email.macro.json",
+      "category": "recovery",
+      "sha256": "587f00c77ba331d2926591e6101ad2cfd27512be72b84c3b5d085063f08e1967",
+      "sizeBytes": 81
+    },
+    {
+      "path": "recovery/folder-tree/Work/Daily/Report.macro.json",
+      "category": "recovery",
+      "sha256": "c0ddced8568f6a8cb36c6881e3bd77d0af40226578679965fe0409955a17b11e",
+      "sizeBytes": 88
+    },
+    {
+      "path": "schemas/edge-all-event-types.expected.json",
+      "category": "schemas",
+      "sha256": "ef6cae45b93d37a65c84fc1524af56c80a6d1734385544ab9fc41256ffe630b8",
+      "sizeBytes": 16990
+    },
+    {
+      "path": "schemas/edge-all-event-types.macro.json",
+      "category": "schemas",
+      "sha256": "ef6cae45b93d37a65c84fc1524af56c80a6d1734385544ab9fc41256ffe630b8",
+      "sizeBytes": 16990
+    },
+    {
+      "path": "schemas/edge-case-insensitive-schema.expected.json",
+      "category": "schemas",
+      "sha256": "b36d06ea2421efa6abe5e50073a453acb6da5f91a590f9b0e49871e6a1acf49b",
+      "sizeBytes": 1120
+    },
+    {
+      "path": "schemas/edge-case-insensitive-schema.macro.json",
+      "category": "schemas",
+      "sha256": "0ddb8fad1382cd4c8f729cc93a79613d6722b5b1c0f96a84d7ad79a412e57f20",
+      "sizeBytes": 85
+    },
+    {
+      "path": "schemas/edge-future-unknown-fields.expected.json",
+      "category": "schemas",
+      "sha256": "cf56daf6b82df230789abcc5d37e6b8f8213609b04f6c9035de88630800e3a38",
+      "sizeBytes": 3866
+    },
+    {
+      "path": "schemas/edge-future-unknown-fields.macro.json",
+      "category": "schemas",
+      "sha256": "cf56daf6b82df230789abcc5d37e6b8f8213609b04f6c9035de88630800e3a38",
+      "sizeBytes": 3866
+    },
+    {
+      "path": "schemas/edge-minimal-defaults.expected.json",
+      "category": "schemas",
+      "sha256": "e42a75d8e3eaaad55a73334cd2d83a47df6d38885f7856c9765d734b2453def6",
+      "sizeBytes": 1112
+    },
+    {
+      "path": "schemas/edge-minimal-defaults.macro.json",
+      "category": "schemas",
+      "sha256": "daf6c6c209fd064e0364b2131d2326ea5cdc134a880bebb6360305d53f44624e",
+      "sizeBytes": 38
+    },
+    {
+      "path": "schemas/edge-repeat-forever-toggle.expected.json",
+      "category": "schemas",
+      "sha256": "667d5494a95b8f2cb425534a9e0096dd525b77133d679e3e69200b697a24122f",
+      "sizeBytes": 3711
+    },
+    {
+      "path": "schemas/edge-repeat-forever-toggle.macro.json",
+      "category": "schemas",
+      "sha256": "34970c13a0693034a731bdfab4c58a0db51b365241ee954449c1e56dd54acbf3",
+      "sizeBytes": 3705
+    },
+    {
+      "path": "schemas/legacy-recorder-unversioned.expected.json",
+      "category": "schemas",
+      "sha256": "5e113a40154acb244116ab085f5df0650e7b54b4cb4aad880031a0b94cfd8e09",
+      "sizeBytes": 501
+    },
+    {
+      "path": "schemas/legacy-recorder-unversioned.json",
+      "category": "schemas",
+      "sha256": "31cc425595d78ccd49287515ece5642e8f2a1b1591958f320d4b4184a7ba9b31",
+      "sizeBytes": 369
+    },
+    {
+      "path": "schemas/schema-04-05-legacy.expected.json",
+      "category": "schemas",
+      "sha256": "e8dac68ea39a8ddab167a75c3be09860f87850d8fbf4a55075b7f712957dbeea",
+      "sizeBytes": 1981
+    },
+    {
+      "path": "schemas/schema-04-05-legacy.macro.json",
+      "category": "schemas",
+      "sha256": "790e87fe069bd2b202588c3bcb69ae650e940d37c15295f04f8c034daf598349",
+      "sizeBytes": 508
+    },
+    {
+      "path": "schemas/schema-09-legacy.expected.json",
+      "category": "schemas",
+      "sha256": "af44c410bd84c467f0a1acafa1397a4cf528ab89226aa173bde83de676be5207",
+      "sizeBytes": 1980
+    },
+    {
+      "path": "schemas/schema-09-legacy.macro.json",
+      "category": "schemas",
+      "sha256": "9254cb602b7d08a969038f0150b15add9aba8e2b176b4ab00415e8bccf4b4df2",
+      "sizeBytes": 906
+    },
+    {
+      "path": "schemas/schema-10-annotations.expected.json",
+      "category": "schemas",
+      "sha256": "6a62fa80d00a1e80801af189dd374914ad261e4d41b5fd29a7dd778f165bac0b",
+      "sizeBytes": 1645
+    },
+    {
+      "path": "schemas/schema-10-annotations.macro.json",
+      "category": "schemas",
+      "sha256": "efe87923beffb9f673eca84654e6a5000a61ebf119e40625cdc625c6fb7241f9",
+      "sizeBytes": 1573
+    },
+    {
+      "path": "schemas/schema-11-package.expected.json",
+      "category": "schemas",
+      "sha256": "7d4c79fcde977085afcb22e21d726a22917b2adc231aab0c380baff7e7bd6964",
+      "sizeBytes": 2030
+    },
+    {
+      "path": "schemas/schema-11-package.macro.json",
+      "category": "schemas",
+      "sha256": "13080cfa6e37b8715e1f3ac191d34ce398d025b3009b22b5facdedf69514bb18",
+      "sizeBytes": 2015
+    },
+    {
+      "path": "schemas/schema-12-current.expected.json",
+      "category": "schemas",
+      "sha256": "0687bd8f6af1ca0cc8b8d8ddb1c19e6b6f2b5750de44efe9fd97f358f8e62353",
+      "sizeBytes": 3711
+    },
+    {
+      "path": "schemas/schema-12-current.macro.json",
+      "category": "schemas",
+      "sha256": "0687bd8f6af1ca0cc8b8d8ddb1c19e6b6f2b5750de44efe9fd97f358f8e62353",
+      "sizeBytes": 3711
+    },
+    {
+      "path": "settings/clearable-intent-hotkeys-settings.expected.json",
+      "category": "settings",
+      "sha256": "d57d7fd965eaf61bb229661b67c502b054388045897fa15c65aaf5cceb7317ef",
+      "sizeBytes": 1811
+    },
+    {
+      "path": "settings/clearable-intent-hotkeys-settings.json",
+      "category": "settings",
+      "sha256": "d57d7fd965eaf61bb229661b67c502b054388045897fa15c65aaf5cceb7317ef",
+      "sizeBytes": 1811
+    },
+    {
+      "path": "settings/custom-options-settings.json",
+      "category": "settings",
+      "sha256": "f523f8d4492ee311c85ef4f220706e996c797bb96fa3f816c262c82974c10cbf",
+      "sizeBytes": 1853
+    },
+    {
+      "path": "settings/default-settings.json",
+      "category": "settings",
+      "sha256": "956f116c59f3f814d150bba7b7e2bc157e00e0a86c6a6045edbf026f391b13ac",
+      "sizeBytes": 1817
+    },
+    {
+      "path": "settings/migrated-f12-to-f11-settings.expected.json",
+      "category": "settings",
+      "sha256": "956f116c59f3f814d150bba7b7e2bc157e00e0a86c6a6045edbf026f391b13ac",
+      "sizeBytes": 1817
+    },
+    {
+      "path": "settings/migrated-f12-to-f11-settings.json",
+      "category": "settings",
+      "sha256": "047956fcf0fdd4bb84643d1c2f63ee3ef17930760b3f5bbdd3464ce470260c3d",
+      "sizeBytes": 1817
+    }
+  ]
+}

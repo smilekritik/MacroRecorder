@@ -1,0 +1,261 @@
+/**
+ * Macro Recorder Theme CSS
+ * Translates DarkTheme and LightTheme brushes into CSS custom properties,
+ * plus custom scrollbars, focus rings, and typography.
+ */
+
+:root,
+[data-theme='dark'] {
+  --color-window-bg: #0d1117;
+  --color-surface: #151b23;
+  --color-surface-raised: #1b2330;
+  --color-surface-hover: #253142;
+  --color-input-bg: #202a38;
+  --color-border: #687a91;
+  --color-border-subtle: #2b3544;
+  --color-text-primary: #f0f4f8;
+  --color-text-secondary: #c0cad6;
+  --color-text-muted: #9aa8b7;
+  --color-text-disabled: #768494;
+  --color-accent: #66e06f;
+  --color-accent-hover: #7bec83;
+  --color-accent-pressed: #4fcb59;
+  --color-accent-foreground: #071108;
+  --color-save: #175c2c;
+  --color-save-hover: #1d7136;
+  --color-save-pressed: #124a23;
+  --color-save-foreground: #ffffff;
+  --color-focus: #8ab4ff;
+  --color-danger: #ff6978;
+  --color-danger-surface: #43242b;
+  --color-danger-hover: #573039;
+  --color-danger-strong: #b92f44;
+  --color-danger-strong-hover: #d13b53;
+  --color-danger-strong-foreground: #ffffff;
+  --color-warning: #ffd166;
+  --color-warning-surface: #332a16;
+  --color-conflict: #ff7ac8;
+  --color-conflict-surface: #40203a;
+  --color-hook-bind: #b79cff;
+  --color-selection: #263d2c;
+  --color-table-selection: #263548;
+  --color-overlay: #121720e6;
+
+  /* Aliases */
+  --color-background: var(--color-window-bg);
+  --color-panel: var(--color-surface);
+  --color-panel-raised: var(--color-surface-raised);
+  --color-muted: var(--color-text-muted);
+
+  color-scheme: dark;
+}
+
+[data-theme='light'] {
+  --color-window-bg: #f3f6f9;
+  --color-surface: #ffffff;
+  --color-surface-raised: #e8eef4;
+  --color-surface-hover: #dce5ed;
+  --color-input-bg: #ffffff;
+  --color-border: #718096;
+  --color-border-subtle: #cbd5e1;
+  --color-text-primary: #15202b;
+  --color-text-secondary: #354454;
+  --color-text-muted: #526273;
+  --color-text-disabled: #6b7785;
+  --color-accent: #18752a;
+  --color-accent-hover: #126221;
+  --color-accent-pressed: #0d511a;
+  --color-accent-foreground: #ffffff;
+  --color-save: #146c2e;
+  --color-save-hover: #0f5925;
+  --color-save-pressed: #0b471d;
+  --color-save-foreground: #ffffff;
+  --color-focus: #075bc7;
+  --color-danger: #a7192c;
+  --color-danger-surface: #fbe9ec;
+  --color-danger-hover: #f5d2d8;
+  --color-danger-strong: #a7192c;
+  --color-danger-strong-hover: #8f1425;
+  --color-danger-strong-foreground: #ffffff;
+  --color-warning: #6b4f00;
+  --color-warning-surface: #fff4cf;
+  --color-conflict: #a81e7a;
+  --color-conflict-surface: #fbe2f2;
+  --color-hook-bind: #7c3aed;
+  --color-selection: #ddf4e1;
+  --color-table-selection: #dce8f5;
+  --color-overlay: #fffffff2;
+
+  /* Aliases */
+  --color-background: var(--color-window-bg);
+  --color-panel: var(--color-surface);
+  --color-panel-raised: var(--color-surface-raised);
+  --color-muted: var(--color-text-muted);
+
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  cursor: default;
+  cursor: default;
+  cursor: default;
+  color: var(--color-text-primary);
+  font-family: 'Segoe UI Variable Text', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Controls keep the arrow, like native Windows ones: Tailwind's preflight would turn buttons into a hand. */
+html button,
+html [role='button'] {
+  cursor: default;
+}
+
+/* Scrollbar thumb and track */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-border);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  min-height: 32px;
+  min-width: 32px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-text-muted);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--color-focus);
+}
+
+/* Focus ring class matching KeyboardFocusStyle (border: FocusBrush, 2px, radius: 7px) */
+.keyboard-focus-ring:focus-visible,
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 1px;
+}
+
+/* Main-window geometry control metrics. */
+.reference-main-window { background: var(--color-window-bg); color: var(--color-text-primary); font: 14px/20px 'Segoe UI Variable Text', 'Segoe UI', sans-serif; }
+.reference-main-window button[data-button-variant], .reference-main-window .reference-library-node { transition: none; }
+.reference-main-window .reference-titlebar { height: 30px; min-height: 30px; font-size: 12px; }
+.reference-app-header { display: grid; grid-template-columns: auto minmax(0, 1fr) auto 33px 40px; align-items: center; height: 76px; min-height: 76px; padding: 0 24px; background: var(--color-surface); border-bottom: 1px solid var(--color-border-subtle); }
+.reference-brand { grid-column: 1; display: flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700; white-space: nowrap; }
+.reference-status-dot { width: 11px; height: 11px; border-radius: 50%; background: var(--color-accent); flex: none; }
+.reference-status-dot.state-recording { background: var(--color-danger); animation: reference-status-blink .6s infinite alternate; }
+.reference-status-dot.state-playing { background: var(--color-accent); animation: reference-status-blink .6s infinite alternate; }
+.reference-status-dot.state-paused { background: var(--color-warning); }
+@keyframes reference-status-blink { from { opacity: 1; } to { opacity: .2; } }
+.reference-playback-banner { grid-column: 2; padding: 0 24px; color: var(--color-accent); font-size: 13px; font-weight: 600; line-height: 17px; max-height: 36px; overflow: hidden; text-align: center; }
+.reference-primary-controls { grid-column: 3; display: flex; gap: 8px; }
+.reference-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid var(--color-border); border-radius: 6px; background: var(--color-surface-raised); color: var(--color-text-primary); font-size: 14px; font-weight: 600; white-space: nowrap; cursor: default; }
+.reference-button:hover:not(:disabled), .reference-main-window button[data-button-variant]:hover:not(:disabled) { opacity: .9; }
+.reference-button:active:not(:disabled), .reference-main-window button[data-button-variant]:active:not(:disabled) { opacity: .78; }
+.reference-button:disabled, .reference-main-window button[data-button-variant]:disabled { opacity: .62; color: var(--color-text-disabled); cursor: default; }
+.reference-accent-button { background: var(--color-accent); color: var(--color-accent-foreground); border-color: var(--color-accent); }
+.reference-accent-button:hover:not(:disabled) { background: var(--color-accent-hover); border-color: var(--color-accent-hover); }
+.reference-accent-button:active:not(:disabled) { background: var(--color-accent-pressed); }
+.reference-danger-button { color: var(--color-danger); background: var(--color-danger-surface); border-color: var(--color-danger); }
+.reference-danger-button:hover:not(:disabled) { background: var(--color-danger-hover); }
+.reference-record-icon, .reference-stop-icon { width: 10px; height: 10px; background: currentColor; flex: none; }
+.reference-record-icon { border-radius: 50%; }
+.reference-header-separator { grid-column: 4; width: 1px; height: 28px; justify-self: center; background: var(--color-border-subtle); }
+.reference-settings-button { grid-column: 5; min-height: 40px; width: 40px; padding: 0; }
+.reference-main-body { flex: 1; display: flex; min-height: 0; overflow: hidden; }
+.reference-library-column { flex: none; min-height: 0; }
+.reference-library-divider { width: 5px; flex: none; cursor: col-resize; }
+.reference-library-divider:hover { background: var(--color-border-subtle); }
+html.is-col-resizing, html.is-col-resizing * { cursor: col-resize !important; }
+.reference-workspace { display: flex; flex: 1; flex-direction: column; gap: 16px; margin: 20px; min-width: 0; min-height: 0; }
+.reference-workspace-header { display: flex; align-items: center; justify-content: space-between; flex: none; gap: 16px; }
+.reference-tabs { display: flex; padding: 4px; border-radius: 8px; background: var(--color-surface-raised); flex: none; }
+.reference-tabs button { padding: 10px 14px; border-radius: 5px; color: var(--color-text-secondary); font-size: 14px; font-weight: 600; white-space: nowrap; }
+.reference-tabs button.is-active { color: var(--color-text-primary); background: var(--color-surface); }
+.reference-tabs button:hover { color: var(--color-text-primary); }
+.reference-macro-controls { display: flex; align-items: center; gap: 16px; min-width: 0; font-size: 14px; font-weight: 600; }
+.reference-macro-controls > label { white-space: nowrap; }
+.reference-activation-select { width: 240px; min-width: 150px; }
+.reference-enabled-control { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 174px; flex: none; white-space: nowrap; }
+.reference-tab-panel { flex: 1; min-height: 0; min-width: 0; padding: 20px; border: 1px solid var(--color-border-subtle); border-radius: 10px; background: var(--color-surface); overflow: auto; }
+.reference-editor-panel { display: flex; flex-direction: column; gap: 16px; overflow: hidden; }
+.reference-macro-details { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.5fr) minmax(0, 3fr); gap: 24px; align-items: start; flex: none; }
+.reference-macro-name > button, .reference-macro-description > button { width: 100%; padding: 4px; background: transparent; border: 0; text-align: left; cursor: default; }
+.reference-macro-name > button { font-size: 19px; font-weight: 600; line-height: 25px; overflow-wrap: anywhere; }
+.reference-macro-description > button { color: var(--color-text-secondary); font-size: 14px; line-height: 20px; max-height: 68px; overflow: hidden; }
+.reference-macro-description > button.is-placeholder { color: var(--color-text-muted); font-style: italic; }
+.reference-macro-details input, .reference-macro-details textarea { width: 100%; min-height: 40px; padding: 9px 12px; border: 1px solid var(--color-border); border-radius: 5px; background: var(--color-input-bg); color: var(--color-text-primary); font: inherit; }
+.reference-macro-details textarea { resize: none; min-height: 76px; max-height: 96px; }
+.reference-edited-label { color: var(--color-warning); font-size: 11px; }
+.reference-main-window .reference-shortcut { padding: 9px 12px; border: 1px solid var(--color-border-subtle); border-radius: 8px; background: var(--color-surface-raised); min-width: 0; }
+.reference-main-window .reference-shortcut > div:first-child { gap: 12px; }
+.reference-main-window .reference-shortcut label { font-size: 16px; }
+.reference-main-window .reference-shortcut [role='textbox'] { min-width: 90px; height: 40px; min-height: 40px; display: block; padding: 9px 12px; border-radius: 5px; background: var(--color-input-bg); font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.reference-main-window .reference-shortcut button { min-height: 44px; padding: 0 12px; }
+.reference-main-window .reference-timeline-table { border-radius: 0; box-shadow: none; }
+.reference-main-window .reference-action-column { flex: 1 1 0; min-width: 220px; }
+.reference-main-window .reference-comment-column { flex: .75 1 0; min-width: 160px; }
+.reference-timeline-toolbar { flex: none; margin-top: 16px; }
+.reference-timeline-button-groups { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0; align-items: start; }
+.reference-timeline-add-actions, .reference-timeline-edit-actions { display: flex; flex-wrap: wrap; gap: 8px 6px; }
+.reference-timeline-edit-actions { justify-content: flex-end; padding-left: 6px; }
+.reference-main-window .reference-timeline-toolbar button { min-height: 44px; padding: 0 7px; font-size: 12px; border-radius: 6px; }
+.reference-main-window .reference-library { padding: 16px; background: var(--color-surface); border-right: 1px solid var(--color-border-subtle); }
+.reference-library-header { flex: none; }
+.reference-library-search-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.reference-library-search-row h1 { font-size: 16px; font-weight: 600; white-space: nowrap; }
+.reference-library-search-row input { flex: 1; min-width: 0; width: 0; height: 28px; padding: 3px 8px; border: 1px solid var(--color-border); border-radius: 5px; background: var(--color-input-bg); color: var(--color-text-primary); font-size: 13px; }
+.reference-library-actions { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; margin-bottom: 12px; }
+.reference-main-window .reference-library-actions button { min-height: 30px; padding: 0 4px; font-size: 13px; }
+.reference-library-bottom { flex: none; display: flex; flex-direction: column; gap: 10px; padding-top: 10px; }
+.reference-main-window .reference-library-bottom > div { gap: 6px; }
+.reference-main-window .reference-library-bottom button { min-height: 32px; padding: 0 6px; font-size: 13px; }
+.reference-main-window .reference-library-bottom > button { min-height: 44px; font-size: 14px; }
+.reference-main-window .reference-library-node.is-macro { min-height: 66px; padding-top: 10px; padding-bottom: 10px; margin: 3px 0; background: var(--color-surface-raised); border-color: var(--color-border-subtle); align-items: flex-start; }
+.reference-main-window .reference-library-node.is-enabled { background: var(--color-selection); border-color: var(--color-accent); }
+.reference-main-window .reference-library-node.is-macro:not(.is-enabled) { opacity: .68; }
+.reference-main-window .reference-library-node.is-selected { border-color: var(--color-focus); box-shadow: inset 0 0 0 1px var(--color-focus); }
+.reference-main-window .reference-library-node.is-folder { min-height: 36px; background: transparent; border-color: transparent; padding-top: 5px; padding-bottom: 5px; }
+.reference-main-window .reference-library-node.is-macro > div:first-child > div > span:first-child { font-size: 15px; font-weight: 600; }
+.reference-main-window .reference-library-node.is-macro > div:first-child > div > span:last-child { font-size: 13px; line-height: 18px; margin-top: 3px; }
+.reference-main-window .reference-library-node.is-macro > div:last-child { margin-top: 1px; }
+.reference-main-window .reference-library-node.is-macro > div:last-child > span:first-child { font-size: 12px; }
+.reference-empty-state { display: flex; flex: 1; flex-direction: column; justify-content: center; align-items: center; gap: 8px; text-align: center; color: var(--color-text-muted); }
+.reference-empty-actions { display: flex; gap: 8px; margin-top: 12px; }
+.reference-start { display: flex; flex: 1; flex-direction: column; justify-content: center; align-items: center; gap: 16px; min-height: 0; padding: 16px; }
+.reference-start h2 { color: var(--color-text-primary); font-size: 16px; font-weight: 600; }
+.reference-start-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 240px)); gap: 12px; }
+.reference-start-card { display: flex; flex-direction: column; gap: 6px; padding: 16px; text-align: left; cursor: default; border-radius: 10px; border: 1px solid var(--color-border-subtle); background: var(--color-surface-raised); color: var(--color-text-secondary); font-size: 13px; }
+.reference-start-card strong { color: var(--color-text-primary); font-size: 14px; font-weight: 600; }
+.reference-start-card:hover { border-color: var(--color-accent); }
+.reference-start-card:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+.reference-start-card.is-primary { border-color: var(--color-accent); }
+.action-picker-category { padding: 5px 10px; border-radius: 6px; font-size: 13px; color: var(--color-text-secondary); cursor: default; background: transparent; border: 1px solid transparent; }
+.action-picker-category:hover { color: var(--color-text-primary); }
+.action-picker-category.is-active { color: var(--color-text-primary); background: var(--color-surface-raised); border-color: var(--color-border-subtle); }
+.action-picker-option { padding: 7px 12px; border-radius: 6px; font-size: 13px; cursor: default; color: var(--color-text-primary); background: var(--color-input-background); border: 1px solid var(--color-border-subtle); }
+.action-picker-option:hover { border-color: var(--color-accent); }
+.action-picker-option.is-active { border-color: var(--color-accent); background: var(--color-selection); }
+.reference-empty-state h2 { color: var(--color-text-primary); font-size: 16px; font-weight: 600; }
+.reference-empty-state p { max-width: 430px; font-size: 13px; }
+.reference-statusbar { height: 36px; min-height: 36px; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; background: var(--color-surface); border-top: 1px solid var(--color-border-subtle); font-size: 13px; }
+.reference-statusbar > div { display: flex; align-items: center; }
+.reference-statusbar a { padding: 0 7px; text-decoration: underline; color: var(--color-text-secondary); }
+.reference-statusbar a:last-child { color: var(--color-text-muted); }
+.reference-statusbar > span { color: var(--color-danger); font-weight: 600; }
+@media (max-width: 1279px) { .reference-workspace-header { flex-wrap: wrap; gap: 12px; } .reference-macro-controls { margin-left: auto; } }
+@media (prefers-reduced-motion: reduce) { .reference-status-dot { animation: none !important; } }

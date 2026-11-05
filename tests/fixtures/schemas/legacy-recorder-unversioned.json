@@ -1,0 +1,25 @@
+{
+  "duration_ms": 25,
+  "events": [
+    {
+      "t_ms": 5,
+      "device": "keyboard",
+      "type": "down",
+      "vk": 65,
+      "sc": 30
+    },
+    {
+      "t_ms": 15,
+      "device": "mouse",
+      "type": "move",
+      "dx_raw": 15,
+      "dy_raw": -8
+    },
+    {
+      "t_ms": 25,
+      "device": "mouse",
+      "type": "down",
+      "button": "X1"
+    }
+  ]
+}

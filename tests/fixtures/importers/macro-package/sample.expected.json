@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 12,
+  "id": "22222222-2222-2222-2222-222222222222",
+  "name": "Transfer Macro",
+  "description": "Valid portable package transfer macro",
+  "isEnabled": false,
+  "tags": [
+    "transfer",
+    "valid"
+  ],
+  "modifiedAt": "2026-09-11T00:00:00+00:00",
+  "recording": {
+    "keyboard": true,
+    "mouseButtons": true,
+    "mouseMovement": true,
+    "mouseWheel": true,
+    "gamepad": false,
+    "mouseMoveBucketMilliseconds": 10,
+    "countdownSeconds": 0
+  },
+  "playback": {
+    "activationMode": "ToggleStop",
+    "targetMode": "SpecificWindow",
+    "focusLossBehavior": "Continue",
+    "passThroughHotkey": false,
+    "hotkeyScopedToTarget": true,
+    "targetProcessName": "target_app.exe",
+    "targetWindowTitle": "Target Application Window",
+    "speed": 1.0,
+    "randomizeTiming": false,
+    "timingJitterMilliseconds": 10,
+    "repeatCount": 1,
+    "repeatDelayMilliseconds": 0,
+    "preferScanCodes": false,
+    "infoCardOverride": "Inherit",
+    "customTextOverride": "Inherit"
+  },
+  "hotkey": {
+    "virtualKey": 0,
+    "mouseButton": "X1",
+    "wheel": "None",
+    "control": true,
+    "alt": false,
+    "shift": false,
+    "windows": false
+  },
+  "events": [
+    {
+      "id": "22220001-0000-0000-0000-000000000001",
+      "timeMicroseconds": 0,
+      "device": "Keyboard",
+      "type": "PixelColorTrigger",
+      "pixelX": 140,
+      "pixelY": -30,
+      "pixelColor": 1194684,
+      "triggerCooldownMilliseconds": 4200
+    },
+    {
+      "id": "22220001-0000-0000-0000-000000000002",
+      "timeMicroseconds": 50000,
+      "device": "Keyboard",
+      "type": "KeyDown",
+      "virtualKey": 69,
+      "scanCode": 18
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "Name": "combo",
+  "Hotkey": {
+    "VirtualKey": 113,
+    "MouseButton": "None",
+    "Wheel": "None",
+    "Control": false,
+    "Alt": false,
+    "Shift": false,
+    "Windows": false
+  },
+  "Events": [
+    {
+      "TimeMicroseconds": 0,
+      "Type": "Comment",
+      "Text": "note"
+    },
+    {
+      "TimeMicroseconds": 0,
+      "Type": "KeyDown",
+      "VirtualKey": 65
+    },
+    {
+      "TimeMicroseconds": 0,
+      "Type": "KeyUp",
+      "VirtualKey": 65
+    },
+    {
+      "TimeMicroseconds": 50000,
+      "Type": "KeyDown",
+      "VirtualKey": 13
+    },
+    {
+      "TimeMicroseconds": 50000,
+      "Type": "KeyUp",
+      "VirtualKey": 13
+    },
+    {
+      "TimeMicroseconds": 60000,
+      "Type": "MouseMove",
+      "DeltaX": 12,
+      "DeltaY": -8
+    },
+    {
+      "TimeMicroseconds": 60000,
+      "Type": "MouseButtonDown",
+      "Button": "Left"
+    },
+    {
+      "TimeMicroseconds": 60000,
+      "Type": "MouseButtonUp",
+      "Button": "Left"
+    },
+    {
+      "TimeMicroseconds": 70000,
+      "Type": "TypeText",
+      "Text": "Hi \"x\""
+    },
+    {
+      "TimeMicroseconds": 80000,
+      "Type": "GamepadButtonDown",
+      "GamepadButton": "A"
+    }
+  ]
+}

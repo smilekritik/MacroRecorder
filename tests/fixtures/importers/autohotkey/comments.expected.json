@@ -1,0 +1,11 @@
+{
+  "Name": "comments",
+  "Comments": [
+    "script header",
+    "block about the mode",
+    "second line of the block",
+    "--- N2D ---"
+  ],
+  "ActionComment": "open",
+  "DurationMicroseconds": 10000
+}

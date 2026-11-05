@@ -1,0 +1,13 @@
+{
+  "macroCount": 2,
+  "macros": [
+    {
+      "Name": "Root macro",
+      "Folder": ""
+    },
+    {
+      "Name": "Nested macro",
+      "Folder": "Games"
+    }
+  ]
+}

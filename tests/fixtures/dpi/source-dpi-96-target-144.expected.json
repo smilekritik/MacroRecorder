@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 12,
+  "id": "66666666-6666-6666-6666-000000000096",
+  "name": "DPI 96 Macro",
+  "description": "Macro recorded at 96 DPI",
+  "isEnabled": false,
+  "playback": {
+    "activationMode": "Once"
+  },
+  "events": [
+    {
+      "timeMicroseconds": 0,
+      "type": "PixelColorTrigger",
+      "pixelX": 150,
+      "pixelY": 300,
+      "pixelColor": 1122867
+    },
+    {
+      "timeMicroseconds": 10000,
+      "type": "MouseMove",
+      "deltaX": 180,
+      "deltaY": 360,
+      "absoluteMove": true
+    }
+  ]
+}

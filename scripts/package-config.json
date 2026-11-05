@@ -1,0 +1,73 @@
+{
+  "name": "MacroRecorder",
+  "displayName": "Macro Recorder",
+  "productName": "Macro Recorder",
+  "version": "1.0.0",
+  "description": "High-precision input recording and playback for Windows (keyboard, mouse, gamepad)",
+  "author": "smilekritik",
+  "license": "MIT",
+  "appId": "com.macrorecorder.app",
+  "copyright": "Copyright © 2026 smilekritik",
+  "executableName": "MacroRecorder.exe",
+  "installerName": "MacroRecorder-Setup-1.0.0-x64.exe",
+  "portableZipName": "MacroRecorder-1.0.0-win-x64-portable.zip",
+  "portableDirName": "MacroRecorder-portable-win-x64",
+  "budgets": {
+    "maxInstallerSizeMb": 160,
+    "maxInstalledSizeMb": 300,
+    "maxNativeAddonSizeMb": 20
+  },
+  "packaging": {
+    "asar": true,
+    "unpackPatterns": [
+      "*.node",
+      "**/*.node",
+      "drivers/*",
+      "**/drivers/*"
+    ],
+    "allowedLocales": [
+      "en-US.pak",
+      "ru.pak"
+    ],
+    "excludePatterns": [
+      "**/*.map",
+      "**/tests/**",
+      "**/__tests__/**",
+      "**/fixtures/**",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.cs",
+      "**/*.pdb",
+      "**/*.lib",
+      "**/*.exp",
+      "**/.git*",
+      "**/tsconfig*.*"
+    ]
+  },
+  "fileAssociations": [
+    {
+      "extension": ".mrmacro",
+      "progId": "MacroRecorder.Package",
+      "description": "Macro Recorder Package",
+      "mimeType": "application/x-macro-recorder-package"
+    },
+    {
+      "extension": ".macro.json",
+      "progId": "MacroRecorder.MacroJson",
+      "description": "Macro Recorder JSON Macro",
+      "mimeType": "application/json"
+    }
+  ],
+  "drivers": [
+    {
+      "type": "HidHide",
+      "filename": "HidHide_1.5.230_x64.exe",
+      "targetName": "MacroRecorder-HidHide-Setup.exe"
+    },
+    {
+      "type": "ViGEmBus",
+      "filename": "ViGEmBus_1.22.0_x64_x86_arm64.exe",
+      "targetName": "MacroRecorder-ViGEmBus-Setup.exe"
+    }
+  ]
+}
